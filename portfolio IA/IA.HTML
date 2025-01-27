@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Portfolio</title>
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .project-card {
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mon Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Hero -->
+  <div class="hero">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <p>Je suis [Ton Nom], un développeur passionné.</p>
+    <a href="#contact" class="btn btn-light btn-lg">Me Contacter</a>
+  </div>
+
+  <!-- Section À propos -->
+  <section id="about" class="container my-5">
+    <h2 class="text-center">À propos de moi</h2>
+    <p class="text-center">Je suis un développeur web avec [nombre] années d'expérience, spécialisé dans [tes spécialités].</p>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="skills" class="container my-5">
+    <h2 class="text-center">Mes Compétences</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h3>HTML</h3>
+      </div>
+      <div class="col-md-4">
+        <h3>CSS</h3>
+      </div>
+      <div class="col-md-4">
+        <h3>JavaScript</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projects" class="container my-5">
+    <h2 class="text-center">Mes Projets</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="project1.jpg" class="card-img-top" alt="Projet 1">
+          <div class="card-body">
+            <h5 class="card-title">Projet 1</h5>
+            <p class="card-text">Description du projet.</p>
+            <a href="#" class="btn btn-primary">Voir</a>
+          </div>
+        </div>
+      </div>
+      <!-- Ajoute plus de projets ici -->
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="container my-5">
+    <h2 class="text-center">Contact</h2>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Adresse Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
